@@ -1,3 +1,7 @@
+pip_package: python3-pip
+pip_install_packages:
+  - name: docker-py
+    version: "1.8.0"
 db_host: "postgres-db-do-user-9326819-0.b.db.ondigitalocean.com"
 db_user: doadmin
 db_port: "25060"
