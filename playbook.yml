@@ -12,12 +12,6 @@
         version: 1.8.0
         state: present
 
-    - name: Install Docker
-      include_role:
-        name:  geerlingguy.docker
-
-
-
     - name: Run container
       community.docker.docker_container:
         name: App

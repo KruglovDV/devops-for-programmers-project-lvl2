@@ -1,6 +1,5 @@
 roles:
   - name: datadog.datadog
-  - name: geerlingguy.docker
 
 collections:
 - name: community.docker
