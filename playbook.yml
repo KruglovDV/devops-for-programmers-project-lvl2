@@ -24,4 +24,9 @@
           REDMINE_DB_USERNAME: "{{ db_user }}"
           REDMINE_DB_DATABASE: "{{ db_name }}"
           REDMINE_DB_PASSWORD: "{{ db_password }}"
+
+    - name: Run Datadog
+      include_role:
+        name: datadog.datadog
+
           
