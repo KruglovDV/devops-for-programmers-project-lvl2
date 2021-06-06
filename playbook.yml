@@ -1,11 +1,23 @@
 - hosts: all
   tasks:
     - name: Install pip
-      include_role:
-        name:  geerlingguy.pip
-    - name: Install pip
+      apt:
+        name: python3-pip
+        state: present
+        update_cache: yes
+
+    - name: Install docker-py
+      pip:
+        name: docker-py
+        version: 1.8.0
+        state: present
+
+    - name: Install Docker
       include_role:
         name:  geerlingguy.docker
+
+
+
     - name: Run container
       community.docker.docker_container:
         name: App
