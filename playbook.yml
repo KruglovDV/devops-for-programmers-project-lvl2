@@ -13,7 +13,7 @@
         state: present
 
     - name: Run container
-      community.docker.docker_container:
+      docker_container:
         name: App
         image: redmine
         ports:
