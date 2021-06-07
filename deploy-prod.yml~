@@ -2,4 +2,4 @@
   roles:
   - common
   - deploy-app
-          
+  - datadog

@@ -1,0 +1,12 @@
+- name: Run container
+  docker_container:
+    name: App
+    image: redmine
+    ports:
+    - "5000:3000"
+    env:
+      REDMINE_DB_POSTGRES: "{{ db_host }}"
+      REDMINE_DB_PORT: "{{ db_port }}"
+      REDMINE_DB_USERNAME: "{{ db_user }}"
+      REDMINE_DB_DATABASE: "{{ db_name }}"
+      REDMINE_DB_PASSWORD: "{{ db_password }}"

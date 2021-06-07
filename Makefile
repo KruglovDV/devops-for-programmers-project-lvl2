@@ -1,2 +1,2 @@
 deploy:
-		ansible-playbook playbook.yml --ask-vault-pass
+		ansible-playbook deploy-prod.yml --ask-vault-pass
