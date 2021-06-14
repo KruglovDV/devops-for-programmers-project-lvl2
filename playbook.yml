@@ -2,3 +2,8 @@
   roles:
   - common
   - deploy-app
+  tasks:
+    - name: Run datadog
+      include_role:
+        name: datadog.datadog
+      when: "'webservers' in group_names"

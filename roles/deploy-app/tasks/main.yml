@@ -1,7 +1,7 @@
 - name: Run container
   docker_container:
     name: App
-    image: redmine
+    image: redmine:4.2.1
     ports:
     - "5000:3000"
     env:
