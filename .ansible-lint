@@ -1,6 +1,0 @@
-mock_roles:
-  - datadog.datadog
-
-exclude_paths:
-  - .cache/
-  - .github/
