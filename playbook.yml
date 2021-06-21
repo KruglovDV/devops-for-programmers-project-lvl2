@@ -1,9 +1,2 @@
-- hosts: all
-  roles:
-  - common
-  - deploy-app
-  tasks:
-    - name: Run datadog
-      include_role:
-        name: datadog.datadog
-      when: "'webservers' in group_names"
+- import_playbook: redmine-app.yml
+- import_playbook: datadog.yml
