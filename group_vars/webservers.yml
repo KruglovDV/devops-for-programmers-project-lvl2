@@ -27,5 +27,3 @@ datadog_checks:
           url: http://localhost:5000
           timeout: 5
           method: GET
-docker_py_version: "1.8.0"
-redmine_version: "4.2.1"
