@@ -1,2 +1,4 @@
+INVENTORY = hosts.ini
+
 deploy:
-		ansible-playbook playbook.yml --ask-vault-pass
+		ansible-playbook -i $(INVENTORY) playbook.yml --ask-vault-pass
